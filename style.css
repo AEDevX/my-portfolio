@@ -60,18 +60,21 @@ body{
 
 
 .hero-section {
+    display: flex;
+    justify-content: center;
     position: relative;
     min-height: 90vh;
+    
 }
 
 .hero-img {
-    height: 100%;
-    /* width: 100; */
+    min-height: 100%;
+    object-fit: cover;
     position: absolute;
-    right: 10%;
+    /* right: 10%; */
     border-radius: 50%;
     /* z-index: -1; */
-}
+}  
 
 .hero-article {
     display: flex;
@@ -93,18 +96,13 @@ body{
 
 
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 576px) {
     .nav_link :not(:nth-child(1)) {
         display: none;
     }
     .hero-img{
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: -14% ;
-        z-index: -1; 
-        object-fit: contain;
-
+         height: 100%;
+        
     }
 
     .hero-article {
