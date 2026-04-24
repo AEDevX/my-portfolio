@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --text-color: #ffffff;
+    /* --custom-color: ;
+    --border-radius: ;       */
+    --custom-bg1-color: #0d0d0d;
+    --custom-bg2-color: #111827;
+    --logo-color: #00bcd4;
+    --custom-bg4-color: #e5e7eb;
+    --nav-link-hover:  #f39c12;
+    --custom-font: "Open Sans", sans-serif;
+    
+}
+
+body{
+    color: var(--text-color);
+    background-color: var(--custom-bg2-color);
+    font-family: var(--custom-font);
+}
+.c-nav-bar {
+    transition: 0.3s;
+    position: relative;
+}
+
+.logo {
+    color: var(--logo-color);
+    font-family: var(--custom-font);
+    font-weight: 800;
+    font-size: 30px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+}
+.navbar-brand{
+    padding-top: 0.5rem;
+}
+.navbar-brand a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--text-color);
+   
+    
+}
+.navbar-brand a:hover {
+    color: var(--nav-link-hover);
+    border-top: 2px solid var(--custom-bg4-color);
+}
+
+.dropdownIcon {
+    padding-top: 0.5rem;
+}
+.dropdownIcon a{
+    display: none;
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.hero-section {
+    position: relative;
+    min-height: 90vh;
+}
+
+.hero-img {
+    height: 100%;
+    /* width: 100; */
+    position: absolute;
+    right: 10%;
+    border-radius: 50%;
+    /* z-index: -1; */
+}
+
+.hero-article {
+    display: flex;
+    justify-content: space-between;
+    /* width: 50%; */
+    text-align: justify;
+    position: absolute;
+    top: 29%;
+    left: 30%;
+    z-index: -1;
+}
+
+.offer {
+   text-align: justify;
+}
+.c-btn {
+    width: 150px;
+}
+
+
+
+@media screen and (max-width: 680px) {
+    .nav_link :not(:nth-child(1)) {
+        display: none;
+    }
+    .hero-img{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -14% ;
+        z-index: -1; 
+        object-fit: contain;
+
+    }
+
+    .hero-article {
+        display: flex;
+        justify-content: space-between;
+        /* width: 50%; */
+        text-align: justify;
+        position: absolute;
+        top: 4%;
+        left: 5%;
+        z-index: -1;
+    }
+        
+    .logo{
+        padding-left: 35%;
+    }
+    .dropdownIcon a{
+        display: block;
+    }
+    .dropdownIcon {
+        position: absolute;
+        top: 0.7rem;
+        right: 0;
+    }
+}
