@@ -64,16 +64,14 @@ body{
     justify-content: center;
     position: relative;
     height: 90vh;
+    object-fit: cover;
     
 }
 
 .hero-img {
-    min-height: 100%;
-    object-fit: cover;
-    position: absolute;
-    /* right: 10%; */
+    height: 100%;
     border-radius: 50%;
-    /* z-index: -1; */
+   
 }  
 
 .hero-article {
