@@ -60,11 +60,10 @@ body{
 
 
 .hero-section {
-    width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
-    min-height: 90vh;
+    height: 90vh;
     
 }
 
